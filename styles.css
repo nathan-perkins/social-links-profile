@@ -22,6 +22,19 @@
     font-weight: 600;
 }
 
+@media (min-width: 504px) and (max-width: 796px) {
+    .card {
+        width: 28.5rem !important;
+    }
+}
+
+@media (max-width: 504px) {
+    .card {
+        width: 20.4375rem !important;
+        height: 36.1875rem !important;
+    }
+}
+
 :root {
 
 /* colors */
