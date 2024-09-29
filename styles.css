@@ -24,14 +24,15 @@
 
 @media (min-width: 504px) and (max-width: 796px) {
     .card {
-        min-width: 28.5rem !important;
+        width: 28.5rem !important;
     }
 }
 
 @media (max-width: 504px) {
     .card {
-        min-width: 20.4375rem !important;
-        min-height: 36.1875rem !important;
+        width: 20.4375rem !important;
+        height: 36.1875rem !important;
+        padding: 1.5rem !important;
     }
 }
 
@@ -99,8 +100,8 @@ a, a:hover, a:focus, a:active {
     flex-direction: column;
     align-items: center;
 
-    min-width: 24rem;
-    min-height: 38.1875rem;
+    width: 24rem;
+    height: 38.1875rem;
     padding: 2.5rem;
     background-color: var(--clr-neutral-800);
 
