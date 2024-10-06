@@ -61,6 +61,10 @@
 
 }
 
+:focus {
+    outline: none;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -156,6 +160,8 @@ a, a:hover, a:focus, a:active {
 }
 
 .card__link-container {
+    /* display: flex; */
+
     width: 100%;
     padding: 0.75rem;
     background-color: var(--clr-neutral-700);
@@ -166,13 +172,15 @@ a, a:hover, a:focus, a:active {
     transition: background-color 0.6s, color 0.6s;
 }
 
-.card__link-container:hover, .card__link-container:focus {
+.card__link-container:hover, .card__link-container:focus, .card__link-container:active, .card__link-container:has(.card__link:focus) {
     background-color: var(--clr-accent-400);
 
     color: var(--clr-neutral-700);
 }
 
 .card__link {
+    display: block;
+
     color: inherit;
     font-size: var(--fs-400);
     font-weight: var(--fw-bold);
