@@ -160,10 +160,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .card__link-container {
-    /* display: flex; */
-
     width: 100%;
-    padding: 0.75rem;
     background-color: var(--clr-neutral-700);
 
     color: var(--clr-neutral-100);
@@ -179,7 +176,10 @@ a, a:hover, a:focus, a:active {
 }
 
 .card__link {
-    display: block;
+    display: grid;
+    place-items: center;
+
+    height: 2.8125rem;
 
     color: inherit;
     font-size: var(--fs-400);
